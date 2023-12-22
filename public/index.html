@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Adjusted to make items stack vertically */
+        }
+
+        .search-container {
+            display: flex;
+            margin: 10px;
+            padding: 20px; /* Added equal padding */
+        }
+
+        .search-box {
+            margin-right: 10px;
+        }
+
+        .quote-container {
+            max-height: 450px; /* Set the max height at which scrolling will start */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: 20px; /* Added margin to create space between the quote and the button */
+        }
+
+        #generateButton {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .quote-item {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add search boxes above the quote container -->
+    <div class="search-container">
+        <input type="number" id="limit" class="search-box" placeholder="Limit">
+        <input type="number" id="maxLength" class="search-box" placeholder="Max Length">
+        <input type="number" id="minLength" class="search-box" placeholder="Min Length">
+        <input type="text" id="tags" class="search-box" placeholder="Tags">
+        <input type="text" id="author" class="search-box" placeholder="Author">
+    </div>
+
+    <div class="quote-container" id="quoteContainer">
+        <!-- Quote content will be inserted here dynamically -->
+    </div>
+    <button id="generateButton">Generate Quote</button>
+    <script type="module" src="/quoteButtonScript.js"></script>
+</body>
+</html>
