@@ -25,6 +25,7 @@ A couple of limitations that i had faced and decided with couple of decisions:
 
 - In the *quoteButtonScript.js* i wanted to enable to dynamically give the host and the port for the client but i think i was approaching it in a wrong way, so i hardcoded the URL with the port :( 
 - There are no profiles nor configurations to supply in the application to run in a different environments, i wanted to make at least the port customizable, but i ran through problems that i couldn't figure out what to do.
+- I know that the code can be written in a better way but i believe i don't have the advanced expertise yet to implement it in a better way, hopefully one day :)
 
 ##
 
